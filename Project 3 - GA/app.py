@@ -2,11 +2,8 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
 from sklearn.model_selection import train_test_split
 # Import Model Libraries
-from gensim.models.word2vec import Word2Vec
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import accuracy_score, recall_score, roc_auc_score, roc_curve, auc
@@ -15,8 +12,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-from datetime import datetime, timedelta
-import joblib
+
 
 with open('model.pkl', 'rb') as file:
     # Load the pickled object
