@@ -2,6 +2,4 @@ streamlit
 pandas
 scikit-learn
 pickle
-gspread
-oauth2client
 nltk
